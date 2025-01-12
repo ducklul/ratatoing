@@ -1,0 +1,160 @@
+/* Body and container styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20%;
+}
+
+/* Button styles */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #1c1c1c;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+    color: #1c1c1c;
+    transform: scale(1.05);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: #2a2a2a;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Close button */
+.close {
+    color: #e0e0e0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #f05454;
+}
+
+/* Video styles */
+video {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    background-color: #000;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Slider container */
+.slider-container {
+    margin-top: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    width: 100%; /* Ensure the container spans the full width of its parent */
+    max-width: 200px; /* Limit the maximum width to prevent stretching */
+    margin-left: auto;
+    margin-right: auto; /* Center the slider horizontally */
+}
+
+input[type="range"] {
+    appearance: none; /* Standard property */
+    -webkit-appearance: none; /* Vendor prefix for WebKit browsers */
+    width: 80%;
+    background: #2a2a2a;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #f05454;
+}
+
+#speedValue {
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Slider styles */
+input[type="range"] {
+    appearance: none; /* Standard property */
+    -webkit-appearance: none; /* Vendor prefix for WebKit browsers */
+    width: 100%; /* Make the slider take full width of its container */
+    background: #fff; /* White background */
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff; /* White thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #f05454; /* Change thumb color on hover */
+}
