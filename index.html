@@ -3,26 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Ratatoing</title>
+    <title>Watch Movies</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Watch Ratatoing</h1>
-        <button id="watchButton">Watch Now</button>
+        <h1>Watch Movies</h1>
+        <button id="watchRatatoing">Watch Ratatoing</button>
+        <button id="watchBalloonToTheRescue">Watch Balloon to the Rescue</button>
     </div>
 
-    <div id="videoModal" class="modal">
+    <!-- Modal for Ratatoing -->
+    <div id="ratatoingModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <video id="videoPlayer" controls>
+            <video id="ratatoingVideo" controls>
                 <source src="https://www.dropbox.com/scl/fi/flisevrjkxd8od3ytr9jo/ratatoing.mp4?rlkey=gyu66brfxkav5jmshzml2jh55&st=38hbd4h8&raw=1" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="slider-container">
-                <label for="speedSlider">Playback Speed:</label>
-                <input id="speedSlider" type="range" min="0.25" max="40" step="0.25" value="1">
-                <span id="speedValue">1.0x</span>
+                <label for="ratatoingSpeedSlider">Playback Speed:</label>
+                <input id="ratatoingSpeedSlider" type="range" min="0.25" max="16" step="0.25" value="1">
+                <span id="ratatoingSpeedValue">1.0x</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Balloon to the Rescue -->
+    <div id="balloonToTheRescueModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="balloonToTheRescueVideo" controls>
+                <source src="https://www.dropbox.com/scl/fi/cw3tq4m98jch4nj53ycft/What-s-Up-balloon-to-the-rescue-2009-Full-Movie.mp4?rlkey=rquw18gnyph7iqd6o7hq1cfwp&st=yzmpcqfa&dl=1">
+                Your browser does not support the video tag.
+            </video>
+            <div class="slider-container">
+                <label for="balloonToTheRescueSpeedSlider">Playback Speed:</label>
+                <input id="balloonToTheRescueSpeedSlider" type="range" min="0.25" max="16" step="0.25" value="1">
+                <span id="balloonToTheRescueSpeedValue">1.0x</span>
             </div>
         </div>
     </div>
